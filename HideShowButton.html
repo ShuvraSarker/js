@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+<title>JavaScript Tutorial</title>
+<style type="text/css">
+#sectiontohide {
+	padding:20px;
+	background:#f0f0f0;
+	width:400px;
+}
+</style>
+<script type="text/javascript">
+    function toggle_div_fun(id) {
+
+       var divelement = document.getElementById(id);
+
+       if(divelement.style.display == 'none')
+          divelement.style.display = 'block';
+       else
+          divelement.style.display = 'none';
+    }
+</script>
+</head>
+<body>
+<h3>JavaScript to show/hide a Div</h3>
+
+<button onclick="toggle_div_fun('sectiontohide');">Click here</button> to toggle visibility of div element #sectiontohide
+<br /><br />
+
+<div id="sectiontohide">This is the div to hide with id = sectiontohide</div>
+
+</body>
+</html>
